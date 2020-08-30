@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore.Metadata;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -7,7 +8,7 @@ namespace Agendamento.Models
 {
     public class Cliente
     {
-
+        public int Id { get; set; }
         public double cpf { get; set; }
         public string Nome { get; set; }
         public int Celular { get; set; }

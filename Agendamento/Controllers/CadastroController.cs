@@ -32,7 +32,7 @@ namespace Agendamento.Controllers
 
             clienteRepository.Cadastrar(cliente);
 
-            return View("Cadastrou");
+            return View();
         }
 
 
