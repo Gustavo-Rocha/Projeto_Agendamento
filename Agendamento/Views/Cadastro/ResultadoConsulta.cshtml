@@ -1,0 +1,23 @@
+﻿@{
+    ViewData["Title"] = "Pagina De Consulta";
+}
+@model List<Endereco>;
+
+@foreach (var item in Model)
+{
+
+
+<div class="text-center">
+    <h1 class="display-4">@item.Cep</h1>
+    <h1 class="display-4">@item.Rua</h1>
+    <h1 class="display-4">@item.Numero</h1>
+    <h1 class="display-4">@item.Cidade</h1>
+    <h1 class="display-4">@item.Bairro</h1>
+    <h1 class="display-4">@item.Estado</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+
+
+    
+}

@@ -1,0 +1,17 @@
+﻿@{
+    ViewData["Title"] = "Pagina De Consulta";
+}
+@model List<Cliente>;
+
+@foreach (var item in Model)
+{
+
+
+<div class="text-center">
+    <h1 class="display-4">@item.Nome</h1>
+    <h1 class="display-4">@item.Cpf</h1>
+    <h1 class="display-4">@item.Celular</h1>
+    <h1 class="display-4">@item.Email</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+}

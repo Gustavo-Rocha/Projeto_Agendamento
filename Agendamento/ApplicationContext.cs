@@ -32,7 +32,7 @@ namespace Agendamento.Repositorio
         {
             base.OnModelCreating(modelBuilder);
 
-            modelBuilder.Entity<Cliente>().HasKey(c => c.Id);
+            modelBuilder.Entity<Cliente>().HasKey(c => c.Cpf);
             modelBuilder.Entity<Agenda>().HasKey(c => c.Data);
         }
 

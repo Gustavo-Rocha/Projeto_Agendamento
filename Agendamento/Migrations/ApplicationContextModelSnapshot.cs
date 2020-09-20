@@ -24,45 +24,36 @@ namespace Agendamento.Migrations
                     b.Property<DateTime>("Data")
                         .HasColumnType("datetime2");
 
-                    b.Property<int?>("clienteId")
-                        .HasColumnType("int");
-
                     b.HasKey("Data");
-
-                    b.HasIndex("clienteId");
 
                     b.ToTable("Agendamentos");
                 });
 
             modelBuilder.Entity("Agendamento.Models.Cliente", b =>
                 {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                    b.Property<string>("Cpf")
+                        .HasColumnType("nvarchar(11)")
+                        .HasMaxLength(11);
 
-                    b.Property<int>("Celular")
-                        .HasColumnType("int");
+                    b.Property<string>("Celular")
+                        .HasColumnType("nvarchar(8)")
+                        .HasMaxLength(8);
+
+                    b.Property<string>("Cep")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(8)")
+                        .HasMaxLength(8);
 
                     b.Property<string>("Email")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(60)")
+                        .HasMaxLength(60);
 
                     b.Property<string>("Nome")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<double>("cpf")
-                        .HasColumnType("float");
-
-                    b.HasKey("Id");
+                    b.HasKey("Cpf");
 
                     b.ToTable("Clientes");
-                });
-
-            modelBuilder.Entity("Agendamento.Models.Agenda", b =>
-                {
-                    b.HasOne("Agendamento.Models.Cliente", "cliente")
-                        .WithMany()
-                        .HasForeignKey("clienteId");
                 });
 #pragma warning restore 612, 618
         }

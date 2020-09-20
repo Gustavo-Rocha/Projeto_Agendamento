@@ -33,6 +33,8 @@ namespace Agendamento
             services.AddDbContext<ApplicationContext>(options => options.UseSqlServer(connectionString));
 
             services.AddTransient<IClienteRepository, ClienteRepository>();
+            services.AddTransient<IConsultaCliente, ConsultaClienteRepository>();
+            services.AddTransient<IEnderecoRepository, EnderecoRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

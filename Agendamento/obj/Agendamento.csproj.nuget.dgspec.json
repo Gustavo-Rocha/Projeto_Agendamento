@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Dev\\Projeto_agendamento\\Agendamento\\Agendamento.csproj": {}
+    "C:\\Dev\\Projeto_Agendamento\\Agendamento\\Agendamento.csproj": {}
   },
   "projects": {
-    "C:\\Dev\\Projeto_agendamento\\Agendamento\\Agendamento.csproj": {
+    "C:\\Dev\\Projeto_Agendamento\\Agendamento\\Agendamento.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Dev\\Projeto_agendamento\\Agendamento\\Agendamento.csproj",
+        "projectUniqueName": "C:\\Dev\\Projeto_Agendamento\\Agendamento\\Agendamento.csproj",
         "projectName": "Agendamento",
-        "projectPath": "C:\\Dev\\Projeto_agendamento\\Agendamento\\Agendamento.csproj",
+        "projectPath": "C:\\Dev\\Projeto_Agendamento\\Agendamento\\Agendamento.csproj",
         "packagesPath": "C:\\Users\\Oliveira\\.nuget\\packages\\",
-        "outputPath": "C:\\Dev\\Projeto_agendamento\\Agendamento\\obj\\",
+        "outputPath": "C:\\Dev\\Projeto_Agendamento\\Agendamento\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -75,7 +75,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

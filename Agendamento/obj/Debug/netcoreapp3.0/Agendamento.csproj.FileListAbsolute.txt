@@ -130,3 +130,9 @@ C:\Dev\Projeto_agendamento\Agendamento\bin\Debug\netcoreapp3.0\runtimes\win\lib\
 C:\Dev\Projeto_agendamento\Agendamento\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Design.dll
 C:\Dev\Projeto_agendamento\Agendamento\obj\Debug\netcoreapp3.0\Agendamento.csproj.CoreCompileInputs.cache
 C:\Dev\Projeto_agendamento\Agendamento\obj\Debug\netcoreapp3.0\Agendamento.MvcApplicationPartsAssemblyInfo.cache
+C:\Dev\Projeto_Agendamento\Agendamento\obj\Debug\netcoreapp3.0\Razor\Views\Cadastro\ResultadoConsulta.cshtml.g.cs
+C:\Dev\Projeto_Agendamento\Agendamento\obj\Debug\netcoreapp3.0\Razor\Views\ConsultaCliente\ResultadoConsulta.cshtml.g.cs
+C:\Dev\Projeto_Agendamento\Agendamento\obj\Debug\netcoreapp3.0\Razor\Views\Cadastro\Exclusao.cshtml.g.cs
+C:\Dev\Projeto_Agendamento\Agendamento\obj\Debug\netcoreapp3.0\Razor\Views\Cadastro\Alteracao.cshtml.g.cs
+C:\Dev\Projeto_Agendamento\Agendamento\bin\Debug\netcoreapp3.0\Connected Services\Provedor do Microsoft WCF Web Service Reference\ConnectedService.json
+C:\Dev\Projeto_Agendamento\Agendamento\obj\Debug\netcoreapp3.0\Razor\Views\Cadastro\Cadastrar.cshtml.g.cs

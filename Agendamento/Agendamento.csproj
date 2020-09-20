@@ -5,6 +5,31 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Migrations\20200916221450_AjusteModel.cs" />
+    <Compile Remove="Migrations\20200916221450_AjusteModel.Designer.cs" />
+    <Compile Remove="Migrations\20200916221541_AjusteModel.cs" />
+    <Compile Remove="Migrations\20200916221541_AjusteModel.Designer.cs" />
+    <Compile Remove="Migrations\20200916221706_AjusteModel.cs" />
+    <Compile Remove="Migrations\20200916221706_AjusteModel.Designer.cs" />
+    <Compile Remove="Migrations\20200916221746_AjusteModel.cs" />
+    <Compile Remove="Migrations\20200916221746_AjusteModel.Designer.cs" />
+    <Compile Remove="Migrations\20200919165629_ModelV2.cs" />
+    <Compile Remove="Migrations\20200919165629_ModelV2.Designer.cs" />
+    <Compile Remove="Migrations\20200919170000_ModelV2.cs" />
+    <Compile Remove="Migrations\20200919170000_ModelV2.Designer.cs" />
+    <Compile Remove="Migrations\20200919170236_ModelV2.cs" />
+    <Compile Remove="Migrations\20200919170236_ModelV2.Designer.cs" />
+    <Compile Remove="Migrations\20200919170519_ModelV2.cs" />
+    <Compile Remove="Migrations\20200919170519_ModelV2.Designer.cs" />
+    <Compile Remove="Migrations\20200919170930_ModelV2.cs" />
+    <Compile Remove="Migrations\20200919170930_ModelV2.Designer.cs" />
+    <Compile Remove="Migrations\20200919171020_ModelV2.cs" />
+    <Compile Remove="Migrations\20200919171020_ModelV2.Designer.cs" />
+    <Compile Remove="Migrations\20200919171413_ModelV2.cs" />
+    <Compile Remove="Migrations\20200919171413_ModelV2.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.7" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.7">
       <PrivateAssets>all</PrivateAssets>
@@ -22,10 +47,21 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Update="Views\Cadastro\ResultadoConsulta.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
     <EmbeddedResource Update="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services" />
   </ItemGroup>
 
 </Project>

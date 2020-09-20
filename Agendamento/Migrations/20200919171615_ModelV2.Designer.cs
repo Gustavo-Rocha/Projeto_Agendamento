@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Agendamento.Migrations
 {
     [DbContext(typeof(ApplicationContext))]
-    [Migration("20200830030014_CorrecaoInicial")]
-    partial class CorrecaoInicial
+    [Migration("20200919171615_ModelV2")]
+    partial class ModelV2
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -26,45 +26,36 @@ namespace Agendamento.Migrations
                     b.Property<DateTime>("Data")
                         .HasColumnType("datetime2");
 
-                    b.Property<int?>("clienteId")
-                        .HasColumnType("int");
-
                     b.HasKey("Data");
-
-                    b.HasIndex("clienteId");
 
                     b.ToTable("Agendamentos");
                 });
 
             modelBuilder.Entity("Agendamento.Models.Cliente", b =>
                 {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                    b.Property<string>("Cpf")
+                        .HasColumnType("nvarchar(11)")
+                        .HasMaxLength(11);
 
-                    b.Property<int>("Celular")
-                        .HasColumnType("int");
+                    b.Property<string>("Celular")
+                        .HasColumnType("nvarchar(8)")
+                        .HasMaxLength(8);
+
+                    b.Property<string>("Cep")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(8)")
+                        .HasMaxLength(8);
 
                     b.Property<string>("Email")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(60)")
+                        .HasMaxLength(60);
 
                     b.Property<string>("Nome")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<double>("cpf")
-                        .HasColumnType("float");
-
-                    b.HasKey("Id");
+                    b.HasKey("Cpf");
 
                     b.ToTable("Clientes");
-                });
-
-            modelBuilder.Entity("Agendamento.Models.Agenda", b =>
-                {
-                    b.HasOne("Agendamento.Models.Cliente", "cliente")
-                        .WithMany()
-                        .HasForeignKey("clienteId");
                 });
 #pragma warning restore 612, 618
         }

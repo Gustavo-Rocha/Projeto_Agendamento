@@ -10,7 +10,7 @@ namespace Agendamento.Models
 
         public DateTime Data { get; set; }
        
-        public Cliente cliente { get; set; }
+       // public Cliente cliente { get; set; }
 
     }
 }

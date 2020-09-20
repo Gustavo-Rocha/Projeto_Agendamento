@@ -10,6 +10,10 @@ namespace Agendamento.Repositorio
     {
 
         void Cadastrar(Cliente cliente);
+        void ExcluirCliente(string cpf);
+        void AlterarCliente(Cliente cliente);
+        IList<Cliente> ConsultarCliente();
+        Cliente ConsultarClientePorParametro(string cpf);
 
 
     }
