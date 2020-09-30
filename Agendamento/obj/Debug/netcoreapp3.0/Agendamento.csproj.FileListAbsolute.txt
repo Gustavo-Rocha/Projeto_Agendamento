@@ -136,3 +136,5 @@ C:\Dev\Projeto_Agendamento\Agendamento\obj\Debug\netcoreapp3.0\Razor\Views\Cadas
 C:\Dev\Projeto_Agendamento\Agendamento\obj\Debug\netcoreapp3.0\Razor\Views\Cadastro\Alteracao.cshtml.g.cs
 C:\Dev\Projeto_Agendamento\Agendamento\bin\Debug\netcoreapp3.0\Connected Services\Provedor do Microsoft WCF Web Service Reference\ConnectedService.json
 C:\Dev\Projeto_Agendamento\Agendamento\obj\Debug\netcoreapp3.0\Razor\Views\Cadastro\Cadastrar.cshtml.g.cs
+C:\Dev\Projeto_Agendamento\Agendamento\obj\Debug\netcoreapp3.0\Razor\Views\Cadastro\Consultar.cshtml.g.cs
+C:\Dev\Projeto_Agendamento\Agendamento\obj\Debug\netcoreapp3.0\Razor\Views\Cadastro\Error.cshtml.g.cs

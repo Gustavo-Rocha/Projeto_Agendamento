@@ -98,12 +98,8 @@ namespace Agendamento.Controllers
         }
 
 
-        public IActionResult Alteracao()
+        public IActionResult Alteracao(Cliente cliente)
         {
-
-            var cliente = new Cliente();
-            cliente.Cpf = "1";
-            
 
             clienteRepository.AlterarCliente(cliente);
             return View();
@@ -115,12 +111,12 @@ namespace Agendamento.Controllers
 
             var codigo = await enderecoRepository.ConsultarComParametro(cliente.Cep);
             HttpStatusCode status;
-            
+            ErrorViewModel error = new ErrorViewModel();
 
-            if (codigo==false
+            if (!codigo)
             {
                 Console.WriteLine(codigo);
-                return View("CEP inválido");
+                return View("Error",error);
             }
             //Console.WriteLine(codigo);
 
@@ -129,5 +125,14 @@ namespace Agendamento.Controllers
             return View();
         }
 
+        public IActionResult Consultar()
+        {
+
+             var cliente = clienteRepository.ConsultarCliente();
+
+
+
+            return View(cliente);
+        }
     }
 }

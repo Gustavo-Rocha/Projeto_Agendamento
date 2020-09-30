@@ -5,8 +5,8 @@
 
 
 <form method="post" action="/Cadastro/Exclusao" novalidate="novalidate">
-    ID do Cliente :
-    <input type="text" name="Cpf" size="5" maxlength="5" id="Irineu">
+    Excluir Cliente
+    <input type="text" name="Cpf" size="12" maxlength="11" id="Irineu" value="CPF do Cliente">
     <input type="submit" />
 </form>
 
@@ -15,25 +15,26 @@
 
 
 <div class="text-center">
-    <h1 class="display-4">Cadastra memo</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1 class="display-4">Cadastro De Clientes</h1>
+    <p>Sistema que Cadastra  o cliente e verifica se o Cep  a ser cadastrado é valido, via <a href=" https://localhost:44379/api/Enderecos"> API DE ENDERECOS </a>.</p>
 </div>
 
 <div class="text-center">
 
     <form method="post" action="/Cadastro/Cadastrar" novalidate="novalidate">
         Cliente:
-        <input type="text" name="Cpf" size="5" maxlength="11" id="Irineu">
-        <input type="text" name="Nome" size="35" maxlength="50" id="Irineu">
-        <input type="number" name="Celular" size="5" maxlength="5" id="Irineu">
-        <input type="text" name="Email" size="40" maxlength="60" id="Irineu">
-        <input type="text" name="Cep" size="5" maxlength="8" id="Irineu">
+        <input type="text" name="Cpf" size="5" maxlength="11">
+        <input type="text" name="Nome" size="35" maxlength="50">
+        <input type="number" name="Celular" size="5" maxlength="5">
+        <input type="text" name="Email" size="40" maxlength="60">
+        <input type="text" name="Cep" size="5" maxlength="8">
         <input type="submit" />
     </form>
 
 
 
     <a asp-controller="Cadastro" asp-action="Exclusao" class="btn btn-success">Excluir</a>
-    <a asp-controller="Cadastro" asp-action="ResultadoConsulta" class="btn btn-success">Consultar</a>
+    <a asp-controller="Cadastro" asp-action="ResultadoConsulta" class="btn btn-success">Consultar Enderecos</a>
     <a asp-controller="Cadastro" asp-action="Alteracao" class="btn btn-success">Alterar</a>
+    <a asp-controller="Cadastro" asp-action="Consultar" class="btn btn-success">Consultar</a>
 </div>
